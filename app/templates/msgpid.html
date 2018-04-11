@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>&Chi;mRmsG&#8707;&#915;</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='milligram.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='milligram.css') }}">
+</head>
+<body>
+<br><br>
+    <div class="container">
+		<p>Message saved to: <a href="https://gateway.ipfs.io/ipfs/{{ ipfs_hash }}" target="_blank">{{ ipfs_hash }}</a></p>
+		To transmit encrypted message, send XMR to recipient's wallet address <br> 
+		with the following Payment ID:
+		<p><h3><b>{{ payment_id }}</b></h3></p>
+    </div>
+</body>
+</html>

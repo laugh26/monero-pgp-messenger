@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>&Chi;mRmsG&#8707;&#915;</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='milligram.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='milligram.css') }}">
+</head>
+<body>
+<br>
+    <div class="container">
+        
+        <h2>&Chi;mRmsG&#8707;&#915;</h2>
+        &#8594; Create an encrypted message with the recipient's PGP public key<br>
+        &#8594; Copy and paste the cipher text in the box below and submit
+
+            <form method="get" action="/api/msgpid">
+                <fieldset>
+                <textarea name="msg" id="msg" value="" placeholder="PGP message block..."></textarea><br>
+                <input class="button-primary" value="Send" type="submit">&emsp;<input class="button-primary" type="reset">
+                </fieldset>
+                </form>
+        
+        <h2>Retrieve message</h2>
+        &#8594; Enter Payment ID below
+
+            <form method="get" action="/api/pid">
+                <fieldset>
+                <input type='text' name="payment_id" id="payment_id" value="" placeholder="Payment ID..."></textarea>
+                <input class="button-primary" value="Send" type="submit">&emsp;<input class="button-primary" type="reset">
+                </fieldset>
+            </form>
+    </div>
+</body>
+</html>
+ 
